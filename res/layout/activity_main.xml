@@ -26,42 +26,65 @@
         android:id="@+id/tvTip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btFifteen"
-        android:layout_below="@+id/btFifteen"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="96dp"
+        android:layout_below="@+id/sbTipPercent"
         android:text="@string/tipAmnt" />
-
-    <Button
-        android:id="@+id/btTen"
-        style="?android:attr/buttonStyleSmall"
+    <TextView
+        android:id="@+id/tvTipPercent"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/sbTipPercent"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/ZeroPercent"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvZeroPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTipPercent"
+        android:layout_alignBottom="@+id/tvTipPercent"
+        android:layout_toLeftOf="@+id/sbTipPercent"
+        android:text="@string/ZeroPercent"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <SeekBar
+        android:id="@+id/sbTipPercent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/etAmount"
-        android:layout_centerVertical="true"
-        android:text="@string/ten"
-        android:onClick="tip10" />
-    
-    <Button
-        android:id="@+id/btFifteen"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btTen"
-        android:layout_alignBottom="@+id/btTen"
-        android:layout_centerHorizontal="true"
-        android:text="@string/fifteen"
-        android:onClick="tip15" />
-
-    <Button
-        android:id="@+id/btTwenty"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/tvTip"
         android:layout_alignRight="@+id/etAmount"
-        android:text="@string/twenty"
-        android:onClick="tip20" />
+        android:layout_below="@+id/etAmount"
+        android:layout_marginTop="121dp" />
 
-    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:contentDescription="Dollar Sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etAmount"
+        android:layout_toLeftOf="@+id/etAmount"
+        android:src="@drawable/dollar" />
+
+    <TextView
+        android:id="@+id/tvTipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvTip"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/tvTip"
+        android:text="@string/TipText" />
+
+    <TextView
+        android:id="@+id/tvTipPercentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvTipPercent"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_marginBottom="51dp"
+        android:text="@string/tvTipPercentLabel" />
 
 </RelativeLayout>

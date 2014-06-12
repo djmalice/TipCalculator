@@ -3,11 +3,14 @@
 
     <string name="app_name">TipCalculator</string>
     <string name="action_settings">Settings</string>
-    <string name="ten">10%</string>
+    <string name="ten">Calculate</string>
     <string name="fifteen">15%</string>
     <string name="twenty">20%</string>
     <string name="totAmount"></string>
     <string name="tipAmnt"></string>
     <string name="dollar">$</string>
+    <string name="ZeroPercent">0%</string>
+    <string name="TipText">Tip is:</string>
+    <string name="tvTipPercentLabel">Choose Tip percent</string>
 
 </resources>
